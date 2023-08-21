@@ -38,7 +38,7 @@ def get_lotacao():
             element.click()
 
     # Espera página carregar
-    WebDriverWait(driver=driver, timeout=10).until(
+    WebDriverWait(driver=driver, timeout=1).until(
         lambda x: x.execute_script("return document.readyState === 'complete'")
     )
 
